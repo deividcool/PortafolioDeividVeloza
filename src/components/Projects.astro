@@ -1,4 +1,5 @@
 ---
+import React from "./icons/React.astro"
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
@@ -15,25 +16,55 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REACT: {
+    name: "React JS",
+    class: "bg-[#0970C5] text-white",
+    icon: React,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Chat-Real-Time",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+      "Desarrollada con Next.js, React js, React Native y Tailwind CSS, aplicación que ofrece comunicación en tiempo real entre clientes, mejorando la productividad empresarial. Con una interfaz intuitiva y ágil.",
+    github: "https://github.com/deividcool/ChatApi",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.REACT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Aplicacion CRM SMART-SALES",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Plataforma Empresarial de Gestión de Relaciones con el Cliente. Creada desde cero con React Native y Tailwind CSS",
+    link: "https://play.google.com/store/apps/details?id=com.smartsalesmobile.appexiware",
+    image: "/projects/Smart-Sales-Mobile.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.REACT],
   },
+  {
+    title: "Coin Base",
+    description:
+      "Plataforma gratuita donde puedes revisar el estado actual de las monedas crypto. Creada desde cero con Typescript y Tailwind CSS",
+    link: "https://github.com/deividcool/CoinBase",
+    image: "/projects/CoinBase.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "Weather App",
+    description:
+      "Plataforma gratuita donde puedes revisar el estado del clima en tu ciudad o pais. Creada desde cero con React Native y Tailwind CSS",
+    link: "https://github.com/deividcool/WeatherApp",
+    image: "/projects/Weather.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "MovieApp",
+    description:
+      "Plataforma gratuita donde puedes revisar las ultimas tendencias en peliculas. Creada desde cero con React Native y Tailwind CSS",
+    link: "https://github.com/deividcool/MovieApp",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+
+  
 ]
 ---
 
@@ -70,6 +101,7 @@ const PROJECTS = [
               Ver código fuente
             </LinkButton>
           )}
+          {link && (
           <LinkButton href={link}>
             <svg
               width="24"
@@ -96,6 +128,7 @@ const PROJECTS = [
             </svg>
             Ir al sitio web
           </LinkButton>
+          )}
         </footer>
       </article>
     ))

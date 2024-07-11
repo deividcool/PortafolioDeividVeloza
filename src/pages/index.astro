@@ -13,6 +13,7 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import SocialPill from "@/components/SocialPill.astro"
+import Whatsapp from "@/components/icons/Whatsapp.astro"
 ---
 
 <Layout
@@ -63,9 +64,13 @@ import SocialPill from "@/components/SocialPill.astro"
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:velozadeivid@gmail.com">
+        <SocialPill href="mailto:velozadeivid@gmail.com" >
           <MailIcon class="size-4 md:size-6" />
           velozadeivid@gmail.com
+        </SocialPill>
+        <SocialPill href="https://wa.me/573045843345?text=Hola%20estoy%20interesado%20en%20trabajar%20contigo" style="border-color: #25D366; color: #25D366;">
+          <Whatsapp class="size-4 md:size-6" />
+          Whatsapp
         </SocialPill>
       </nav>
     </SectionContainer>
